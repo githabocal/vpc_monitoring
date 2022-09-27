@@ -30,6 +30,7 @@
   Note: For CloudWatch, we must also have IAM role thus create a new role as follows;
 ```
 For Permission as below;
+
     {
         "Version": "2012-10-17",
         "Statement": [
@@ -45,5 +46,20 @@ For Permission as below;
                 "Resource": "*"
             }
         ]
+    }
+```
+```
+For Trust relationships as below;
+    {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "vpc-flow-logs.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
     }
 ```
