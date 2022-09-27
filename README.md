@@ -2,6 +2,7 @@
 <br>
 - How do you monitor your VPC? --> VPC Flow logs
 **_Note: Before you create flow log, make sure you have created s3 bucket and have ARN ready to use in flow log!_**
+</br>
 # <h3>Create flow log:
 - Head to VPC and select the created `VPC` and choose `Flow logs` and click on `Create flow log`
 - Then follow the steps stated below;
