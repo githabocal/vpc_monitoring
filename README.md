@@ -2,6 +2,7 @@
 
 - How do you monitor your VPC? --> VPC Flow logs
 - 2(two) destination types --> S3 and CloudWatch
+- CloudWatch is an AWS monitoring service
 <br>**_Note: Before you create flow log, make sure you have created s3 bucket and have ARN ready to use in flow log!_**
 
 
