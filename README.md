@@ -20,4 +20,27 @@
 # <h3>CloudWatch(AWS monitoring tool):
 - Head to `CloudWatch` in AWS and click on `Logs` dropdown on the left panel then click on **`Log groups`** then click on **`Create log group`**
 - Set a log group name (ex: vpcflowlog) then click on **`Create`**
-- 
+- Head to your `VPCs` and create a new flow log for `cloudwatch` then as follows;
+    - Set a name (ex: flowlog_to_cloudwatch)
+    - Choose `1 minute` for `Maximum aggregation interval`
+    - Choose `Send to CloudWatch Logs` for `Destination`
+    - Paste the `ARN` for `S3 bucket ARN` 
+    - Choose `Every 1 hour(60 minutes)` for `Partition logs by time`
+    - Then click on **`Create flow log`**
+  Note: For CloudWatch, we must also have IAM role thus create a new policy as follows;
+`{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "logs:DescribeLogGroups",
+                "logs:DescribeLogStreams"
+            ],
+            "Resource": "*"
+        }
+    ]
+}`
