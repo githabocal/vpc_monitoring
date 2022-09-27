@@ -5,7 +5,7 @@
 # <h3>Create flow log:
 - Head to VPC and select the created `VPC` and choose `Flow logs` and click on `Create flow log`
 - Then follow the steps stated below;
-    - set a name (ex: flowlog_to_s3)
+    - Set a name (ex: flowlog_to_s3)
     - Choose `1 minute` for `Maximum aggregation interval`
     - Choose `Send to Amazon S3 bucket` for `Destination`
     - Paste the `ARN` for `S3 bucket ARN` 
