@@ -1,7 +1,7 @@
 # VPC_Monitoring
 
 <br>How do you monitor your VPC? --> VPC Flow logs<br>
-    - **_Note: Before you create flow log, make sure you have created s3 bucket and have ARN ready to use in flow log!_**
+**_Note: Before you create flow log, make sure you have created s3 bucket and have ARN ready to use in flow log!_**
 
 
 # <h3>Create flow log:
