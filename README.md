@@ -24,8 +24,7 @@
     - Set a name (ex: flowlog_to_cloudwatch)
     - Choose `1 minute` for `Maximum aggregation interval`
     - Choose `Send to CloudWatch Logs` for `Destination`
-    - Paste the `ARN` for `S3 bucket ARN` 
-    - Choose `Every 1 hour(60 minutes)` for `Partition logs by time`
+    - Choose `IAM role` which has already been created for CloudWatch
     - Then click on **`Create flow log`**
   Note: For CloudWatch, we must also have IAM role thus create a new role as follows;
 ```
