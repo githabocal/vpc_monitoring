@@ -11,3 +11,4 @@
     - Paste the `ARN` for `S3 bucket ARN` 
     - Choose `Every 1 hour(60 minutes)` for `Partition logs by time`
     - Then click on **`Create flow log`**
+    - **_`Verify bucket policy has been attached to s3 bucket`_**
