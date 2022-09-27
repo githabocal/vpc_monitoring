@@ -27,8 +27,8 @@
     - Paste the `ARN` for `S3 bucket ARN` 
     - Choose `Every 1 hour(60 minutes)` for `Partition logs by time`
     - Then click on **`Create flow log`**
-  Note: For CloudWatch, we must also have IAM role thus create a new policy as follows;
-```
+  Note: For CloudWatch, we must also have IAM role thus create a new role as follows;
+```For Permission as below;
     {
         "Version": "2012-10-17",
         "Statement": [
